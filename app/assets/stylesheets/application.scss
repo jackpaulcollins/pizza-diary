@@ -14,21 +14,28 @@
 
  @import "bootstrap";
 
- .header {
+ .main-header {
    text-align: center;
  }
 
- .table-row  {
+ .header {
+   text-align: left;
+ }
+
+ .blurb {
+   text-align: center;
+ }
+
+ .entries {
    display: flex;
-   justify-content: space-around;
-   width: 100%;
-   border: 1px solid lightgray;
-   height: 50px;
+   flex-direction: column;
    padding: 1%;
  }
 
- .table-body  {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
+ .entry-thumb {
+   display: flex;
+   justify-content: space-around;
+   width: 25rem;
+   border: solid lightgray 1px;
+   margin-bottom: 1%;
+ }

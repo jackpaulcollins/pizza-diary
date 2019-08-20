@@ -1,27 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="header">Pizza Diaries</h1>
+<h1 class="main-header">Pizza Diaries</h1>
 
-<table>
-  <thead>
-    <tr class="table-row">
-      <th>Title</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<hr>
+<p class="blurb">Pizza is important. Make your pizza memories last.</p>
+<div class="header">
+  <h4>Entries:</h4>
+</div>
 
-  <tbody class="table-body">
-    <% @pizza_diaries.each do |pizza_diary| %>
-      <tr class="table-row">
-        <td><%= pizza_diary.title %></td>
-        <td><%= link_to 'View', pizza_diary %></td>
-        <td><%= link_to 'Edit', edit_pizza_diary_path(pizza_diary) %></td>
-        <td><%= link_to 'Delete', pizza_diary, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+<div class="entries">
+  <% @pizza_diaries.each do |pizza_diary| %>
+    <div class="entry-thumb">
+      <strong><%= pizza_diary.title %></strong>
+      <%= link_to 'View', pizza_diary %>
+      <%= link_to 'Edit', edit_pizza_diary_path(pizza_diary) %>
+      <%= link_to 'Delete', pizza_diary, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+  <% end %>
+</div>
 
 <%= link_to 'New Pizza Diary', new_pizza_diary_path %>
