@@ -1,0 +1,2 @@
+class PizzaDiary < ApplicationRecord
+end

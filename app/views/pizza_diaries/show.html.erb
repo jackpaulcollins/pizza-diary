@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @pizza_diary.title %>
+</p>
+
+<p>
+  <strong>Toppings:</strong>
+  <%= @pizza_diary.toppings %>
+</p>
+
+<p>
+  <strong>Thoughts:</strong>
+  <%= @pizza_diary.thoughts %>
+</p>
+
+<%= link_to 'Edit', edit_pizza_diary_path(@pizza_diary) %> |
+<%= link_to 'Back', pizza_diaries_path %>
