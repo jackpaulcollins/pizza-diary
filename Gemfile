@@ -18,7 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 
 # custom gems
 
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'newrelic_rpm'
 
